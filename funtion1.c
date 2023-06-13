@@ -3,22 +3,22 @@
 int power(int base, int n);
 
 int main() {
-    int i;
+    int n;
+    n = 3;
 
-    for(i = 0; i < 10; i++) {
-        printf("n = %d resultado de la potencia = %d\n", i, power(2, i));
-    }
+    printf("n = %d resultado de la potencia = %d\n", n, power(2, n));
+    printf("The original value of n is: %d\n", n);
 
     return 0;
 }
 
 
 int power(int base, int n) {
-    int i, p;
-    p = 1;
+    int p;
 
-    for(i = 1; i <= n; i++) {
+    for(p = 1; n > 0; n--) {
         p = p * base;
+        printf("The temporal value of n is: %d\n", n);
     }
 
     return p;
